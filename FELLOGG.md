@@ -15,3 +15,6 @@ Felet hittade jag först i actions sedan provade jag att köra lokalt med uv syn
  --> src/miniforecast/baseline.py:3:8, sedan körde jag lokalt,. Jag öppnade filen baseline.py och
  såg att det fanns en import os, koden verkar inte ha behov av import os 
  Hur löste du det ? : Jag tog bort import os och provade köra lokalt först och fick "all checks passed" nästa steg att pusha och se vad nästa fel blir 
+ 4. fel nr 4# formatfel unformatted: File would be reformatted. 
+ Hur löste du det: jag provade att köra uv run ruff format för att rätta formatering automatiskt 
+ sedan uv run ruff format --check src test för kontroll 
