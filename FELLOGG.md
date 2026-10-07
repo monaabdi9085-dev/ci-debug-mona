@@ -11,3 +11,7 @@ Error: Process completed with exit code 1.
 Felet hittade jag först i actions sedan provade jag att köra lokalt med uv sync frozen och det fungerade inte hellet och uv  försökte skapa venv men stoppade då den insåg att det inte fanns uv.lock .
   Hur löste du det ? : genom att köra uv kommando: uv lock , en lock fil skapades sedan körde jag 
   uv sync --frozen och det fungerade lokalt 
+3. Fel nr #3 I github actions stod felet att F401 [*] `os` imported but unused
+ --> src/miniforecast/baseline.py:3:8, sedan körde jag lokalt,. Jag öppnade filen baseline.py och
+ såg att det fanns en import os, koden verkar inte ha behov av import os 
+ Hur löste du det ? : Jag tog bort import os och provade köra lokalt först och fick "all checks passed" nästa steg att pusha och se vad nästa fel blir 
