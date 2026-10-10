@@ -19,3 +19,4 @@ Felet hittade jag först i actions sedan provade jag att köra lokalt med uv syn
  Hur löste du det: jag provade att köra uv run ruff format för att rätta formatering automatiskt 
  sedan uv run ruff format --check src test för kontroll 
 5. fel nr#5 Import error /Modulenotfounderror " no module named "numpy", samma fel lokalt när jag kör uv run pytest, tittar man i pyproject är dependencies tom . hur löste du det : uv add numpy 
+6. Fel nr 6 test moving average window 2(features.py), det fanns ett fel i funktionen den delade med ett för högt värde och jag ändrade den till att dela med 2 . 
