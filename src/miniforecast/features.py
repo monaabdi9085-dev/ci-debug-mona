@@ -18,4 +18,3 @@ def min_max_scale(values: list[float]) -> list[float]:
     if low == high:
         raise ValueError("alla värden är lika, kan inte skala")
     return [(value - low) / (high - low) for value in values]
-
